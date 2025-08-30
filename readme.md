@@ -29,23 +29,7 @@ This project is for **research and educational purposes only**. Nothing in this 
 
 The per-ticker pipeline:
 
-```mermaid
-flowchart TD
-    A[Input: Ticker & Config] --> B[Retrieval: RAG (filings & docs)]
-    B --> C[Fundamental Agent (RAG + LLM)]
-    A --> D[News Ingest]
-    D --> E[Sentiment Agent (News Summarization + Score)]
-    A --> F[Price History Ingest]
-    F --> G[Valuation Agent (Metrics & Signals)]
-    C --> H[Debate Controller]
-    E --> H
-    G --> H
-    H --> I{Consensus?}
-    I -- Yes --> J[Portfolio Construction & Allocation]
-    I -- No --> K[New Debate Round / Re-run Agents]
-    J --> L[Backtesting & Evaluation]
-    L --> M[Results: Plots, Metrics, Reports]
-```
+![per-ticker pipeline](assets/alphaagents_flowchart.png.png)
 
 
 
