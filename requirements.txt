@@ -1,0 +1,14 @@
+langchain
+langgraph
+langchain-groq
+chromadb
+sentence-transformers
+yfinance
+pandas
+numpy
+groq
+pydantic
+pytest
+pandas-ta
+matplotlib
+python-dotenv

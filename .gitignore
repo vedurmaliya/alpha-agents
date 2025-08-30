@@ -1,0 +1,12 @@
+# Environment
+.env
+venv/
+
+# Python Caches
+__pycache__/
+*.pyc
+
+# Local Data and Databases
+data/
+chroma_db/
+runs/
